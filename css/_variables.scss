@@ -1,0 +1,46 @@
+// fonts
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400,500,700&display=swap');
+
+// colors
+
+$yellow : #fabc1f;
+$red : #e14d43;
+$text-color: #503429;
+$white : #fff ;
+$brown : #503429;
+
+// size
+
+$p-textsize : 16px;
+$h2: 30px;
+
+// mixins
+
+@mixin transition-text-hover{
+ transition: 0.2s ease-in-out;
+}
+
+@mixin sec-h2-font{
+    font-family: 'Roboto Slab', sans-serif;
+    color:$red;
+    margin-bottom: 36px;
+   }
+
+@mixin pg-h2-font{
+    font-family: 'Roboto Slab', sans-serif;
+    color:$yellow;
+    font-size:36px;
+    font-weight: bold;
+    text-align:center;
+    // padding: 17% 0;
+    margin: 0;
+   }
+
+@mixin p-font{
+    font-family: 'Roboto', sans-serif;
+    color:$text-color;
+    font-size: 17px;
+    line-height: 35px;
+}
+

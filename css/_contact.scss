@@ -1,0 +1,83 @@
+.sec-desc.contact-sec{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 15%;
+    p{
+        @include p-font;
+        line-height: 30px !important;
+        
+    }
+}
+
+#contact{
+    background-image: url('../imgs/wholesome_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.contact-form {
+    padding: 0 15%;
+}
+
+.contact-form {
+    .contact-input{
+        input{
+            height: 50px;
+            border-radius: 0;
+            padding: 6px 25px;
+            margin-bottom: 20px;
+            border: none;
+            background-color: #f8f4e6;
+            font-family: 'Roboto';
+            color: $brown;
+            box-shadow: none;
+            margin-bottom: 0;
+        }
+        textarea{
+            border-radius: 0;
+            border:none;
+            box-shadow: none;
+            background-color: #f8f4e6;
+            padding: 6px 25px;
+        }
+    }
+
+    ::placeholder{
+        color: #503429;
+        opacity: 0.6;
+    }
+}
+
+
+.submit-btn {
+    text-align: center;
+    width: 100%;
+    .btn {
+        text-transform: capitalize;       
+        width: 220px;
+        height: 55px;
+        letter-spacing: 1px;
+        
+    }
+
+    a.btn{
+        padding:15px !important;
+    }
+}
+
+.payment{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    p{
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .mm-logo{
+        img{
+            width:280px;
+        }
+    }
+    
+}

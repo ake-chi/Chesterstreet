@@ -1,0 +1,81 @@
+@import "_variables.scss";
+
+
+#wholesale,
+#cat-pg{
+    background-image: url('../imgs/wholesome_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% -40px;;
+}
+
+.page-banner{
+    height:350px;
+    .title-box{
+        height: 350px;
+        text-align: center;
+        position: relative;
+        .cat-title{
+            position: absolute;
+            top: 55%;
+            width: 100%;
+            h2{
+                @include pg-h2-font;
+            }
+        }
+
+        
+    }    
+}
+
+.section-desc{
+    p{
+        margin-bottom: 20px;
+    }
+    &.wholesale-desc{
+        width: auto !important;
+        text-align: center;
+        margin: auto 5%;
+    }
+}
+
+.order-btn { 
+
+    button,
+    a{
+        width: 355px;
+        height: 55px;
+        background-color: $red;
+        color: $white;
+        border-radius: 0;
+        margin-top: 50px;
+        @include transition-text-hover;
+        font-family: 'Roboto', sans-serif;
+        font-size: $p-textsize;
+        text-transform: uppercase;
+
+        i{
+            margin-right:10px;
+        }
+
+        &:hover{
+            background-color: darken($red, 10%);
+            color:$white;
+        }
+        &:focus{
+            color: $white !important;
+        }
+    }
+
+    button{
+        border:none;
+    }
+    a{
+        padding: 15px;
+    }
+    
+}
+
+.product-view{
+    padding-bottom: 100px;
+}
